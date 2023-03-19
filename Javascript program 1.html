@@ -1,0 +1,36 @@
+<html>
+<body>
+<script>
+let array=[],even_array=[],odd_array=[];
+let size;
+let j=0,k=0;
+size=Number(prompt("Enter the number of elements in array:"));
+for(let i=0;i<size;i++)
+{
+array[i]=Number(prompt("Enter the element:"));
+}
+for (let i=0;i<size;i++)
+{
+if(array[i]%2==0)
+{
+even_array[j++]=array[i];
+}
+else
+{
+odd_array[k++]=array[i]
+}
+}
+for (let j=0;j<even_array.length;j++)
+{
+console.log("Even numbers are:");
+console.log(even_array[j]);
+}
+
+for (let k=0;k<odd_array.length;k++)
+{
+console.log("Odd numbers are:");
+console.log(odd_array[k]);
+}
+</script>
+</body>
+</html>
