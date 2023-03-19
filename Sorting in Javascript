@@ -1,0 +1,26 @@
+<html>
+<body>
+<script>
+let b =  [];
+let size;
+size=Number(prompt("Enter the size of the elemet:"));
+for(let i=0;i<size;i++)
+{
+b[i]=Number(prompt("Enter the element:"));
+}
+
+for(let i=0;i<b.length-1;i++){
+for(let j=i+1;j<b.length;j++)
+{
+if(b[j]<b[i])
+{
+temp = b[j];
+b[j]=b[i];
+b[i] = temp;
+}
+}
+}
+console.log(b)
+</script>
+</body>
+</html>
